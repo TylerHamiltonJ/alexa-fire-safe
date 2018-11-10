@@ -1,0 +1,13 @@
+{
+  "local-manifest": {
+    "publishingInformation.locales.en-US.name": "Local headspace",
+    "publishingInformation.locales.en-GB.name": "Local headspace",
+    "apis.custom.endpoint.uri": "https://a4a8e881.ngrok.io/skill",
+    "events.endpoint.uri": "https://a4a8e881.ngrok.io/skill",
+    "apis.custom.endpoint.sslCertificateType": "Wildcard",
+    "events.endpoint.sslCertificateType": "Wildcard"
+  },
+  "spreadsheets": ["17Lr1-JVfKZkxHPpb4FH-CJql_iXR16x_SHtEhlRfiM0"],
+  "platform": ["alexa", "dialogFlow"],
+  "content": ["ValidDrinks", "ValidIngredients","suggestedIngredients","suggestedDrinks"]
+}

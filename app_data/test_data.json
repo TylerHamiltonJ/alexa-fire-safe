@@ -1,0 +1,381 @@
+{
+  "results": [{
+      "issueFor": "25/01/2018",
+      "status": "N",
+      "declaration": "Today, Thu, 25 Jan 2018 is not currently a day of Total Fire Ban.",
+      "declareList": [{
+          "name": "Mallee",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Wimmera",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "South West",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Northern Country",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North East",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        }
+      ]
+    },
+    {
+      "issueFor": "26/01/2018",
+      "status": "N",
+      "declaration": "Tomorrow, Fri, 26 Jan 2018 is not currently a day of Total Fire Ban.",
+      "declareList": [{
+          "name": "Mallee",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Wimmera",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "South West",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Northern Country",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North East",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        }
+      ]
+    },
+    {
+      "issueFor": "27/01/2018",
+      "status": "N",
+      "declaration": "Sat, 27 Jan 2018 is not currently a day of Total Fire Ban.",
+      "declareList": [{
+          "name": "Mallee",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Wimmera",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "South West",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Northern Country",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North East",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        }
+      ]
+    },
+    {
+      "issueFor": "28/01/2018",
+      "status": "N",
+      "declaration": "Sun, 28 Jan 2018 is not currently a day of Total Fire Ban.",
+      "declareList": [{
+          "name": "Mallee",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Wimmera",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "South West",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Northern Country",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North East",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        }
+      ]
+    },
+    {
+      "issueFor": "29/01/2018",
+      "status": "N",
+      "declaration": "Mon, 29 Jan 2018 is not currently a day of Total Fire Ban.",
+      "declareList": [{
+          "name": "Mallee",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Wimmera",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "South West",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Northern Country",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "Central",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "North East",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "NO - RESTRICTIONS MAY APPLY"
+        }
+      ]
+    },
+    {
+      "issueFor": "25/01/2018",
+      "issueAt": "25/01/2018 05:30:00",
+      "imgUrl": null,
+      "declareList": [{
+          "name": "Mallee",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "Wimmera",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "South West",
+          "status": "HIGH"
+        },
+        {
+          "name": "Northern Country",
+          "status": "HIGH"
+        },
+        {
+          "name": "North Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "North East",
+          "status": "HIGH"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "LOW-MODERATE"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "LOW-MODERATE"
+        }
+      ]
+    },
+    {
+      "issueFor": "26/01/2018",
+      "issueAt": "25/01/2018 05:30:00",
+      "imgUrl": null,
+      "declareList": [{
+          "name": "Mallee",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "Wimmera",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "South West",
+          "status": "HIGH"
+        },
+        {
+          "name": "Northern Country",
+          "status": "HIGH"
+        },
+        {
+          "name": "North Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "Central",
+          "status": "LOW-MODERATE"
+        },
+        {
+          "name": "North East",
+          "status": "HIGH"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "LOW-MODERATE"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "LOW-MODERATE"
+        }
+      ]
+    },
+    {
+      "issueFor": "27/01/2018",
+      "issueAt": "25/01/2018 05:30:00",
+      "imgUrl": null,
+      "declareList": [{
+          "name": "Mallee",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "Wimmera",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "South West",
+          "status": "HIGH"
+        },
+        {
+          "name": "Northern Country",
+          "status": "HIGH"
+        },
+        {
+          "name": "North Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "North East",
+          "status": "HIGH"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "LOW-MODERATE"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "LOW-MODERATE"
+        }
+      ]
+    },
+    {
+      "issueFor": "28/01/2018",
+      "issueAt": "25/01/2018 05:30:00",
+      "imgUrl": null,
+      "declareList": [{
+          "name": "Mallee",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "Wimmera",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "South West",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "Northern Country",
+          "status": "HIGH"
+        },
+        {
+          "name": "North Central",
+          "status": "HIGH"
+        },
+        {
+          "name": "Central",
+          "status": "VERY HIGH"
+        },
+        {
+          "name": "North East",
+          "status": "HIGH"
+        },
+        {
+          "name": "West and South Gippsland",
+          "status": "HIGH"
+        },
+        {
+          "name": "East Gippsland",
+          "status": "HIGH"
+        }
+      ]
+    }
+  ]
+}

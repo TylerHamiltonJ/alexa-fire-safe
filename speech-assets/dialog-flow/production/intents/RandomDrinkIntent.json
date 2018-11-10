@@ -1,0 +1,21 @@
+{
+  "name": "RandomDrinkIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "RandomDrinkIntent",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "aff4793a-2f17-5e2d-aefe-4d3f8e0b785c"
+}

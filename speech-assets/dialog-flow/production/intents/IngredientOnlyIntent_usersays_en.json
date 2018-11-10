@@ -1,0 +1,16 @@
+[
+  {
+    "data": [
+      {
+        "meta": "@list-of-ingredients",
+        "alias": "ingredientOne",
+        "text": "{ingredientOne}",
+        "userDefined": true,
+        "id": "6dbb54a1-fae4-5ca4-bd33-f4f08ed54bab"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

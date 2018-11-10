@@ -1,0 +1,16 @@
+[
+  {
+    "data": [
+      {
+        "meta": "@list-of-drink-names",
+        "alias": "drinkName",
+        "text": "{drinkName}",
+        "userDefined": true,
+        "id": "4b7c8f22-71db-50a1-a57c-1b33de0825c3"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

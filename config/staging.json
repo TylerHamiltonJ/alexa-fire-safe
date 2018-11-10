@@ -1,0 +1,44 @@
+{
+	"server": {
+	  "port": 3000,
+	  "hostSkill": true
+	},
+	"aws": {
+	  "region": "us-east-2"
+	},
+	"dynamoDB": {
+	  "tables": {
+		"users": "nib-user-staging"
+	  }
+	},
+	"s3": {
+	  "bucket": "nib-health-staging",
+	  "url": "https://s3.amazonaws.com/nib-health-staging/"
+	},
+	"googleAnalytics": {
+	  "trackingId": "",
+	  "appName": "nib-health-staging",
+	  "ignoreUsers": [],
+	  "suppressSending": false,
+	  "debug": true
+	},
+	"dashbot" : {
+		"debug": true,
+		"suppressSending": false,
+		"alexa": {
+		  "api_key": ""
+		},
+		"dialogFlow": {
+		  "api_key": ""
+		}
+	  },
+	"timezone": "America/New_York",
+	"cloudwatch": {
+	  "namespace": "NIB Staging"
+	},
+	"api": {
+	  "baseURL": "https://api.staging.nib.com/"
+	},
+	"enableTestStates": true
+  }
+  

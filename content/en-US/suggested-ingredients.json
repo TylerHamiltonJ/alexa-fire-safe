@@ -1,0 +1,498 @@
+[
+  {
+    "ingredientName": "Absinthe",
+    "key": "Absinthe"
+  },
+  {
+    "ingredientName": "Advocaat",
+    "key": "Advocaat"
+  },
+  {
+    "ingredientName": "Amaretto",
+    "key": "Amaretto"
+  },
+  {
+    "ingredientName": "Añejo rum",
+    "key": "Añejo rum"
+  },
+  {
+    "ingredientName": "Apple brandy",
+    "key": "Apple brandy"
+  },
+  {
+    "ingredientName": "Applejack",
+    "key": "Applejack"
+  },
+  {
+    "ingredientName": "Apricot brandy",
+    "key": "Apricot brandy"
+  },
+  {
+    "ingredientName": "Bacardi Limon",
+    "key": "Bacardi Limon"
+  },
+  {
+    "ingredientName": "Bailey's irish cream",
+    "key": "Bailey's irish cream"
+  },
+  {
+    "ingredientName": "Baileys irish cream",
+    "key": "Baileys irish cream"
+  },
+  {
+    "ingredientName": "Banana liqueur",
+    "key": "Banana liqueur"
+  },
+  {
+    "ingredientName": "Beer",
+    "key": "Beer"
+  },
+  {
+    "ingredientName": "Black Sambuca",
+    "key": "Black Sambuca"
+  },
+  {
+    "ingredientName": "Blackberry brandy",
+    "key": "Blackberry brandy"
+  },
+  {
+    "ingredientName": "Blended Scotch",
+    "key": "Blended Scotch"
+  },
+  {
+    "ingredientName": "Blended whiskey",
+    "key": "Blended whiskey"
+  },
+  {
+    "ingredientName": "Blue Curacao",
+    "key": "Blue Curacao"
+  },
+  {
+    "ingredientName": "Bourbon",
+    "key": "Bourbon"
+  },
+  {
+    "ingredientName": "Brandy",
+    "key": "Brandy"
+  },
+  {
+    "ingredientName": "Cachaca",
+    "key": "Cachaca"
+  },
+  {
+    "ingredientName": "Campari",
+    "key": "Campari"
+  },
+  {
+    "ingredientName": "Cantaloupe",
+    "key": "Cantaloupe"
+  },
+  {
+    "ingredientName": "Chambord raspberry liqueur",
+    "key": "Chambord raspberry liqueur"
+  },
+  {
+    "ingredientName": "Champagne",
+    "key": "Champagne"
+  },
+  {
+    "ingredientName": "Cherry brandy",
+    "key": "Cherry brandy"
+  },
+  {
+    "ingredientName": "Cherry Heering",
+    "key": "Cherry Heering"
+  },
+  {
+    "ingredientName": "Chocolate",
+    "key": "Chocolate"
+  },
+  {
+    "ingredientName": "Chocolate ice-cream",
+    "key": "Chocolate ice-cream"
+  },
+  {
+    "ingredientName": "Chocolate liqueur",
+    "key": "Chocolate liqueur"
+  },
+  {
+    "ingredientName": "Chocolate syrup",
+    "key": "Chocolate syrup"
+  },
+  {
+    "ingredientName": "Cider",
+    "key": "Cider"
+  },
+  {
+    "ingredientName": "Cocoa powder",
+    "key": "Cocoa powder"
+  },
+  {
+    "ingredientName": "Coconut rum",
+    "key": "Coconut rum"
+  },
+  {
+    "ingredientName": "Coffee",
+    "key": "Coffee"
+  },
+  {
+    "ingredientName": "Coffee brandy",
+    "key": "Coffee brandy"
+  },
+  {
+    "ingredientName": "Coffee liqueur",
+    "key": "Coffee liqueur"
+  },
+  {
+    "ingredientName": "Cognac",
+    "key": "Cognac"
+  },
+  {
+    "ingredientName": "Cointreau",
+    "key": "Cointreau"
+  },
+  {
+    "ingredientName": "Corona",
+    "key": "Corona"
+  },
+  {
+    "ingredientName": "Cranberry vodka",
+    "key": "Cranberry vodka"
+  },
+  {
+    "ingredientName": "Creme de Cacao",
+    "key": "Creme de Cacao"
+  },
+  {
+    "ingredientName": "Creme de Cassis",
+    "key": "Creme de Cassis"
+  },
+  {
+    "ingredientName": "Crown Royal",
+    "key": "Crown Royal"
+  },
+  {
+    "ingredientName": "Dark rum",
+    "key": "Dark rum"
+  },
+  {
+    "ingredientName": "demerara Sugar",
+    "key": "demerara Sugar"
+  },
+  {
+    "ingredientName": "Dry Vermouth",
+    "key": "Dry Vermouth"
+  },
+  {
+    "ingredientName": "Dubonnet Rouge",
+    "key": "Dubonnet Rouge"
+  },
+  {
+    "ingredientName": "Espresso",
+    "key": "Espresso"
+  },
+  {
+    "ingredientName": "Firewater",
+    "key": "Firewater"
+  },
+  {
+    "ingredientName": "Frangelico",
+    "key": "Frangelico"
+  },
+  {
+    "ingredientName": "Galliano",
+    "key": "Galliano"
+  },
+  {
+    "ingredientName": "Gin",
+    "key": "Gin"
+  },
+  {
+    "ingredientName": "Ginger",
+    "key": "Ginger"
+  },
+  {
+    "ingredientName": "Godiva liqueur",
+    "key": "Godiva liqueur"
+  },
+  {
+    "ingredientName": "Goldschlager",
+    "key": "Goldschlager"
+  },
+  {
+    "ingredientName": "Grand Marnier",
+    "key": "Grand Marnier"
+  },
+  {
+    "ingredientName": "Green Chartreuse",
+    "key": "Green Chartreuse"
+  },
+  {
+    "ingredientName": "Green Creme de Menthe",
+    "key": "Green Creme de Menthe"
+  },
+  {
+    "ingredientName": "Grenadine",
+    "key": "Grenadine"
+  },
+  {
+    "ingredientName": "Guinness stout",
+    "key": "Guinness stout"
+  },
+  {
+    "ingredientName": "Heavy cream",
+    "key": "Heavy cream"
+  },
+  {
+    "ingredientName": "Hot Chocolate",
+    "key": "Hot Chocolate"
+  },
+  {
+    "ingredientName": "Hot Damn",
+    "key": "Hot Damn"
+  },
+  {
+    "ingredientName": "Irish cream",
+    "key": "Irish cream"
+  },
+  {
+    "ingredientName": "Irish whiskey",
+    "key": "Irish whiskey"
+  },
+  {
+    "ingredientName": "Jack Daniels",
+    "key": "Jack Daniels"
+  },
+  {
+    "ingredientName": "Jägermeister",
+    "key": "Jägermeister"
+  },
+  {
+    "ingredientName": "Jim Beam",
+    "key": "Jim Beam"
+  },
+  {
+    "ingredientName": "Johnnie Walker",
+    "key": "Johnnie Walker"
+  },
+  {
+    "ingredientName": "Kahlua",
+    "key": "Kahlua"
+  },
+  {
+    "ingredientName": "Kiwi liqueur",
+    "key": "Kiwi liqueur"
+  },
+  {
+    "ingredientName": "Kool-Aid",
+    "key": "Kool-Aid"
+  },
+  {
+    "ingredientName": "Lemon",
+    "key": "Lemon"
+  },
+  {
+    "ingredientName": "Lemon juice",
+    "key": "Lemon juice"
+  },
+  {
+    "ingredientName": "Lemon peel",
+    "key": "Lemon peel"
+  },
+  {
+    "ingredientName": "Lemon vodka",
+    "key": "Lemon vodka"
+  },
+  {
+    "ingredientName": "Lemonade",
+    "key": "Lemonade"
+  },
+  {
+    "ingredientName": "Light rum",
+    "key": "Light rum"
+  },
+  {
+    "ingredientName": "Lime",
+    "key": "Lime"
+  },
+  {
+    "ingredientName": "Lime juice",
+    "key": "Lime juice"
+  },
+  {
+    "ingredientName": "Malibu rum",
+    "key": "Malibu rum"
+  },
+  {
+    "ingredientName": "Mango",
+    "key": "Mango"
+  },
+  {
+    "ingredientName": "Maui",
+    "key": "Maui"
+  },
+  {
+    "ingredientName": "Mezcal",
+    "key": "Mezcal"
+  },
+  {
+    "ingredientName": "Midori melon liqueur",
+    "key": "Midori melon liqueur"
+  },
+  {
+    "ingredientName": "Mint",
+    "key": "Mint"
+  },
+  {
+    "ingredientName": "Orange bitters",
+    "key": "Orange bitters"
+  },
+  {
+    "ingredientName": "Orange juice",
+    "key": "Orange juice"
+  },
+  {
+    "ingredientName": "Ouzo",
+    "key": "Ouzo"
+  },
+  {
+    "ingredientName": "Peach nectar",
+    "key": "Peach nectar"
+  },
+  {
+    "ingredientName": "Peach Vodka",
+    "key": "Peach Vodka"
+  },
+  {
+    "ingredientName": "Peachtree schnapps",
+    "key": "Peachtree schnapps"
+  },
+  {
+    "ingredientName": "Peppermint schnapps",
+    "key": "Peppermint schnapps"
+  },
+  {
+    "ingredientName": "Pineapple juice",
+    "key": "Pineapple juice"
+  },
+  {
+    "ingredientName": "Prosecco",
+    "key": "Prosecco"
+  },
+  {
+    "ingredientName": "Raspberry vodka",
+    "key": "Raspberry vodka"
+  },
+  {
+    "ingredientName": "Red wine",
+    "key": "Red wine"
+  },
+  {
+    "ingredientName": "Ricard",
+    "key": "Ricard"
+  },
+  {
+    "ingredientName": "Rum",
+    "key": "Rum"
+  },
+  {
+    "ingredientName": "Rye whiskey",
+    "key": "Rye whiskey"
+  },
+  {
+    "ingredientName": "Sambuca",
+    "key": "Sambuca"
+  },
+  {
+    "ingredientName": "Scotch",
+    "key": "Scotch"
+  },
+  {
+    "ingredientName": "Sherry",
+    "key": "Sherry"
+  },
+  {
+    "ingredientName": "Sloe gin",
+    "key": "Sloe gin"
+  },
+  {
+    "ingredientName": "Sour mix",
+    "key": "Sour mix"
+  },
+  {
+    "ingredientName": "Southern Comfort",
+    "key": "Southern Comfort"
+  },
+  {
+    "ingredientName": "Spiced rum",
+    "key": "Spiced rum"
+  },
+  {
+    "ingredientName": "Sprite",
+    "key": "Sprite"
+  },
+  {
+    "ingredientName": "Strawberries",
+    "key": "Strawberries"
+  },
+  {
+    "ingredientName": "Strawberry schnapps",
+    "key": "Strawberry schnapps"
+  },
+  {
+    "ingredientName": "Sugar syrup",
+    "key": "Sugar syrup"
+  },
+  {
+    "ingredientName": "Sweet Vermouth",
+    "key": "Sweet Vermouth"
+  },
+  {
+    "ingredientName": "Tequila",
+    "key": "Tequila"
+  },
+  {
+    "ingredientName": "Tomato juice",
+    "key": "Tomato juice"
+  },
+  {
+    "ingredientName": "Triple sec",
+    "key": "Triple sec"
+  },
+  {
+    "ingredientName": "Vanilla ice-cream",
+    "key": "Vanilla ice-cream"
+  },
+  {
+    "ingredientName": "Vanilla vodka",
+    "key": "Vanilla vodka"
+  },
+  {
+    "ingredientName": "Vermouth",
+    "key": "Vermouth"
+  },
+  {
+    "ingredientName": "Vodka",
+    "key": "Vodka"
+  },
+  {
+    "ingredientName": "Whiskey",
+    "key": "Whiskey"
+  },
+  {
+    "ingredientName": "Whisky",
+    "key": "Whisky"
+  },
+  {
+    "ingredientName": "White Creme de Menthe",
+    "key": "White Creme de Menthe"
+  },
+  {
+    "ingredientName": "White Rum",
+    "key": "White Rum"
+  },
+  {
+    "ingredientName": "Wild Turkey",
+    "key": "Wild Turkey"
+  }
+]

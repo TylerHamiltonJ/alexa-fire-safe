@@ -1,0 +1,28 @@
+{
+  "name": "IngredientsInDrinkIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "IngredientsInDrinkIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@list-of-drink-names",
+          "name": "drinkName",
+          "value": "$drinkName",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "d34f1b84-58e1-5b2a-b0e6-3ca1a81a513d"
+}

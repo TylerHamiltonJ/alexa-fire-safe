@@ -1,100 +1,64 @@
-const helper = require('../services/helpers');
-const speech = require('./speechRandomisers');
-const {
-  Image,
-} = require('actions-on-google');
-const _ = require('lodash');
+// TODO build variables here
 
-exports.drinkName = (voxaEvent) => {
-  if (voxaEvent.model.suggestedDrink) {
-    return helper.checkVowel(voxaEvent.model.suggestedDrink.strDrink);
-  }
-  return helper.checkVowel(voxaEvent.model.drinksList[voxaEvent.model.suggestCount].strDrink);
-};
-exports.interjectYum = () => {
-  if (Math.floor(Math.random() * 100) === 50) {
-    return '<say-as interpret-as="interjection">yum</say-as>!';
-  }
-  return '';
-};
-exports.instructions = voxaEvent =>
-  voxaEvent.model.suggestedDrink.strInstructions
-  .replace('1.', 'First,')
-  .replace('2.', '. Then,')
-  .replace('3.', '. Then,')
-  .replace('4.', '. Then,');
+exports.status = model => model.rating.status;
+exports.name = model => model.rating.name;
+exports.postcode = model => model.postcode;
+exports.data = model => model.data;
+exports.rating = model => model.rating;
+exports.statusCard = (model) => {
+  switch (model.rating.status) {
+    case 'LOW-MODERATE':
+    case 'HIGH':
+    case 'VERY HIGH':
+      return `What does it mean?
+        - If a fire starts, it can most likely be controlled in these conditions and homes can provide safety.
+        - Be aware of how fires can start and minimise the risk.
+        - Controlled burning off may occur in these conditions if it is safe - check to see if permits apply.
+        
+        What should I do?
+        - Check your bushfire survival plan.
+        - Monitor conditions.
+        - Action may be needed.
+        - Leave if necessary.`;
+    case 'SEVERE':
+      return `What does it mean?
+    - Expect hot, dry and possibly windy conditions.
+    - If a fire starts and takes hold, it may be uncontrollable.
+    - Well prepared homes that are actively defended can provide safety. 
+    - You must be physically and mentally prepared to defend in these conditions.
+    
+    What should I do?
+    - Well prepared homes that are actively defended can provide safety - check your bushfire survival plan.
+    - If you are not prepared, leaving bushfire prone areas early in the day is your safest option.
+    - Be aware of local conditions and seek information by listening to your emergency broadcasters, go to cfa.vic.gov.au or call the VicEmergency Hotline on 1800 226 226.`;
+    case 'EXTREME':
+      return `What does it mean?
+    - Expect extremely hot, dry and windy conditions.
+    - If a fire starts and takes hold, it will be uncontrollable, unpredictable and fast moving. Spot fires will start, move quickly and come from many directions.
+    - Homes that are situated and constructed or modified to withstand a bushfire, that are well prepared and actively defended, may provide safety.
+    - You must be physically and mentally prepared to defend in these conditions.
+    
+    What should I do?
+    - Consider staying with your property only if you are prepared to the highest level. This means your home needs to be situated and constructed or modified to withstand a bushfire*, you are well prepared and you can actively defend your home if a fire starts
+    - If you are not prepared to the highest level, leaving high risk bushfire areas early in the day is your safest option
+    - Be aware of local conditions and seek information by listening to your emergency broadcasters, go to cfa.vic.gov.au or call the VicEmergency Hotline on 1800 226 226`;
+    case 'CODE RED':
+      return `What does it mean?
+    - These are the worst conditions for a bush or grass fire.
+    - Homes are not designed or constructed to withstand fires in these conditions
+    - The safest place to be is away from high risk bushfire areas
+    
+    What should I do?
+    - Leaving high risk bushfire areas the night before or early in the day is your safest option - do not wait and see.
+    - Avoid forested areas, thick bush or long, dry grass
 
-exports.ingredients = (voxaEvent) => {
-  const ingredients = Object.keys(voxaEvent.model.suggestedDrink)
-    .filter(i => i.includes('strIngredient') && voxaEvent.model.suggestedDrink[i])
-    .map(
-      (m, index) =>
-      `${helper.convertUnit(voxaEvent, index)} ${helper.convertIngredient(voxaEvent.model.suggestedDrink[m])}`,
-    );
-  return helper.createSentence(ingredients);
-};
-
-exports.userIngredients = (voxaEvent) => {
-  const ingredientSlotNames = Object.keys(voxaEvent.intent.params).filter(f => voxaEvent.intent.params[f]);
-  const ingedientSlots = ingredientSlotNames.map(m => voxaEvent.intent.params[m]);
-  return helper.createSentence(ingedientSlots);
-};
-
-exports.ingredientsCard = (voxaEvent) => {
-  const ingredients = Object.keys(voxaEvent.model.suggestedDrink)
-    .filter(i => i.includes('strIngredient') && voxaEvent.model.suggestedDrink[i])
-    .map(
-      (m, index) =>
-      `${helper.convertUnit(voxaEvent, index)} ${helper.convertIngredient(voxaEvent.model.suggestedDrink[m])}`,
-    );
-  return ingredients.join('\n  \n');
-};
-
-exports.ingredientName = voxaEvent => voxaEvent.model.ingredientName;
-exports.suggestedIngredient = voxaEvent => voxaEvent.model.suggestedDrink.strIngredient1;
-exports.drinksList = voxaEvent => voxaEvent.model.drinksList;
-exports.suggestCount = voxaEvent => voxaEvent.model.suggestCount;
-exports.drinkSlot = (voxaEvent) => {
-  if (!voxaEvent.intent.params.drinkName) {
-    return 'that';
-  }
-  return `a ${voxaEvent.intent.params.drinkName}`;
-};
-
-exports.glassType = (voxaEvent) => {
-  if (voxaEvent.model.suggestedDrink.strGlass) {
-    return `This drink is served in ${helper.checkVowel(
-      voxaEvent.model.suggestedDrink.strGlass,
-    )}.`;
-  }
-  return '';
-};
-
-exports.welcomeInstruction = () => `Try asking: ${speech.randomInstruction()}`;
-
-exports.dialogflowCardInstructions = voxaEvent => ({
-  text: this.ingredientsCard(voxaEvent),
-  subtitle: this.instructions(voxaEvent),
-  title: voxaEvent.model.suggestedDrink.strDrink,
-  image: new Image({
-    url: voxaEvent.model.suggestedDrink.strDrinkThumb,
-    alt: `${voxaEvent.model.suggestedDrink.strDrink} image`,
-  }),
-});
-
-
-exports.drinkingAge = (voxaEvent) => {
-  const locale = _.get(voxaEvent, 'request.locale', 'en-us');
-  switch (locale.toLowerCase()) {
-    case 'en-au':
-      return '18';
-    case 'en-sg':
-      return '18';
-    case 'en-ca':
-      return '19';
-    case 'en-gb':
-      return '18';
+    Know your trigger - make a decision about:
+    - when you will leave
+    - where you will go
+    - how you will get there
+    - when you will return
+    - what will you do if you cannot leave`;
     default:
-      return '21';
+      return '';
   }
 };

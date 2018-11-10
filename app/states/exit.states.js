@@ -8,8 +8,9 @@ exports.register = function register(app) {
   app.onIntent('CancelIntent', () => ({
     to: 'End',
   }));
+
   app.onState('End', () => ({
-    tell: 'End.Message.tell',
+    reply: 'Intent.End',
     to: 'die',
   }));
 };

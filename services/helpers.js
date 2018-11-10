@@ -6,22 +6,22 @@ const fireData = () =>
   new Promise((resolve, reject) =>
     unirest
     .get('https://data.emergency.vic.gov.au/Show?pageId=getFDRTFBJSON')
-    .end(res => (res.ok ? resolve(res.body) : reject(res.error)))
+    .end(res => (res.ok ? resolve(res.body) : reject(res.error))),
   );
 
 const location = postcode => ausPost.getAreaName(postcode);
 module.exports = {
-  getPostCode: alexaEvent => new Promise(resolve => {
+  getPostCode: alexaEvent => new Promise((resolve) => {
     if (alexaEvent.context.System.user.permissions) {
       const addressClient = new AlexaDeviceAddressClient(
         alexaEvent.context.System.apiEndpoint,
         alexaEvent.context.System.device.deviceId,
-        alexaEvent.context.System.user.permissions.consentToken
+        alexaEvent.context.System.user.permissions.consentToken,
       );
       return addressClient
         .getCountryAndPostalCode()
         .then(addressResult =>
-          addressResult.address.postalCode
+          addressResult.address.postalCode,
         )
         .catch(() => null);
     }
@@ -33,7 +33,7 @@ module.exports = {
       const foundLoation = model.data
         .find(t => !t.status)
         .declareList.find(
-          f => f.name.toLowerCase() === slot.area.toLowerCase()
+          f => f.name.toLowerCase() === slot.area.toLowerCase(),
         );
       return foundLoation;
     }
@@ -56,23 +56,23 @@ module.exports = {
       const foundLoation = model.data
         .find(t => t.status)
         .declareList.find(
-          f => f.name.toLowerCase() === slot.area.toLowerCase()
+          f => f.name.toLowerCase() === slot.area.toLowerCase(),
         );
       return foundLoation;
     }
     const postalCode = slot.postcode ? slot.postcode : model.postcode;
-    console.log(postalCode)
+    console.log(postalCode);
     if (postalCode) {
       try {
         const postcode = location(postalCode);
-        console.log(postcode)
+        console.log(postcode);
         const foundLoation = model.data
           .find(t => t.status)
           .declareList.find(f => f.name === postcode);
-        console.log(foundLoation)
+        console.log(foundLoation);
         return foundLoation;
       } catch (err) {
-        console.log(err)
+        console.log(err);
       }
     }
     return null;

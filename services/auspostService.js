@@ -13,7 +13,7 @@ class AuspostService {
     papa.parse(csvFile, {
       header: true,
       complete: results =>
-        results.data.map(e => {
+        results.data.map((e) => {
           const postcode = _.padStart(`${e.postcode}`, 4, '0');
           if (this.$postcodeData[postcode]) {
             // post code is already in the dictionary
@@ -22,7 +22,7 @@ class AuspostService {
 
           this.$postcodeData[postcode] = e;
           return e;
-        })
+        }),
     });
   }
 
@@ -39,7 +39,7 @@ class AuspostService {
     ];
     return {
       lon: postcodeElement.lon,
-      lat: postcodeElement.lat
+      lat: postcodeElement.lat,
     };
   }
   getPostcode(areaName) {

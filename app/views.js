@@ -1,141 +1,102 @@
 const screen = require('./screens');
 
 const views = {
-  Launch: {
-    Begin: {
-      ask: "Welcome to Cocktail King. <audio src='https://s3-ap-southeast-2.amazonaws.com/alexa-sfx-tylerhamiltonj/in.mp3'/> You can ask for the ingredients of a specific cocktail, or find out how to make one. {welcomeInstruction}",
-      reprompt: '{welcomeInstruction}',
-      directives: [screen.Welcome],
+  Intent: {
+    Launch: {
+      ask: 'Welcome to Fire Safe. I can tell you the fire safety rating or the fire ban status of your area. What would you like to do?',
+      reprompt: 'What would you like to do?',
     },
-  },
-  Ingredient: {
-    Unknown: {
-      ask: "Hmmm, I don't know the ingredient {ingredient_slot}. Is there another ingredient you'd like to try?",
-      reprompt: "Is there another ingredient you'd like to try?",
+    End: {
+      tell: 'Thanks for using fire safe!',
     },
-  },
-  Help: {
-    General: {
-      ask: `I can find the ingredients and recipes for your favourite cocktails. To find the ingredients of a cocktail, you can ask: 'What's in a martini'.
-        To find out how to make a drink, you can ask: 'How do I make a bloody mary.'
-        To get a drink recommendation, you can ask: What can I make with gin?
-        To get a random recommendation, you can ask Cocktail King to surprise you.
+    NotHeard: {
+      ask: "Sorry, I didn't understand. Can you please tell me again?",
+      reprompt: 'Can you please tell me again?',
+    },
+    Region: {
+      ask: "For which region? You can tell me your postcode, or your region's name. Which region?",
+      reprompt: 'Which region?',
+    },
+    UnknownRegion: {
+      ask: "I'm don't know that region. You can tell me your postcode, or your region's name. Which region?",
+      reprompt: 'Which region?',
+    },
+    Help: {
+      ask: `To find out the fire rating, you can ask "What is the fire danger rating" and include your region name or postcode.
+        To find out if there is a fire ban, you can ask "Is there a fire ban today?" and include your region name or postcode.
         What would you like to do?`,
       reprompt: 'What would you like to do?',
     },
   },
-  Drinks: {
-    CantMake: {
-      ask: "That's an interesting combination. I can't find any good recipes with {userIngredients}. Is there another drink you want to make?",
-      reprompt: 'What else can I help you with?',
-    },
-    Suggest: {
-      ask: '{interjectYum} How about {drinkName}? It contains {ingredients}. Would you like to know how to make it?',
-      reprompt: 'Would you like to know how to make it?',
-    },
-    RandomSuggest: {
-      ask: [
-        "Okay, let's try something with {suggestedIngredient}! What about {drinkName}? It contains {ingredients}. Would you like to know how to make it?",
-        "Okay, here's one with {suggestedIngredient}! It's called a {drinkName}? It contains {ingredients}. Would you like to know how to make it?",
-        'Sure, how about a {drinkName}? It contains {ingredients}. Would you like to know how to make it?',
-      ],
-      reprompt: 'Would you like to know how to make it?',
-    },
-    NoMore: {
-      ask: 'There are no more drinks matching your criteria. What else can I help you with?',
-      reprompt: 'What else can I help you with?',
-    },
-    Recipe: {
-      ask: {
-        alexa: "{interjectYum} {glassType}. To make it, {instructions}. I've also sent you instructions in your Alexa app. Is there another drink you want to make?",
-        dialogflow: '{glassType} To make it, {instructions}. Is there another drink you want to make?',
-      },
-      reprompt: 'Is there another drink you want to make?',
-      alexaCard: {
+  Rating: {
+    'LOW-MODERATE': {
+      ask: 'The fire rating for the {name} region today is {status}. If a fire starts, it can most likely be controlled in these conditions and homes can provide safety. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
         type: 'Standard',
-        title: '{drinkName}',
-        text: '{ingredientsCard}\n{instructions}',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
       },
-      dialogFlowBasicCard: '{dialogflowCardInstructions}',
     },
-    Instructions: {
-      ask: {
-        alexa: "{drinkName} contains {ingredients}. To make it, {instructions}. {glassType} I've also sent you instructions to your Alexa app. Is there another drink you want to make?",
-        dialogflow: '{drinkName} contains {ingredients}. To make it, {instructions}. {glassType} Is there another drink you want to make?',
-      },
-      reprompt: 'Is there another drink you want to make?',
-      alexaCard: {
+    HIGH: {
+      ask: 'The fire rating for the {name} region today is {status}. If a fire starts, it can most likely be controlled in these conditions and homes can provide safety. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
         type: 'Standard',
-        title: '{drinkName}',
-        text: '{ingredientsCard}\n{instructions}',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
       },
-      dialogFlowBasicCard: '{dialogflowCardInstructions}',
     },
-    Ingredients: {
-      ask: '{drinkName} contains {ingredients}. Would you like to know how to make it?',
-      reprompt: 'Would you like to know how to make it?',
-      alexaCard: {
+    'VERY HIGH': {
+      ask: 'The fire rating for the {name} region today is {status}. If a fire starts, it can most likely be controlled in these conditions and homes can provide safety. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
         type: 'Standard',
-        title: '{drinkName}',
-        text: '{ingredientsCard}',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
       },
-      // dialogFlowBasicCard: '{dialogflowCardIngredients}',
     },
-    ChooseOther: {
-      ask: 'No worries! Is there another drink you want to make?',
-      reprompt: 'Is there another drink you want to make?',
+    SEVERE: {
+      ask: 'The fire rating for the {name} region today is {status}. Expect hot, dry and possibly windy conditions. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
+        type: 'Standard',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
+      },
     },
-    NotFound: {
-      ask: "Hmmmm, I'm not sure what {drinkSlot} is. Is there another drink you want to make?",
-      reprompt: 'Is there another drink you want to make?',
+    EXTREME: {
+      ask: 'The fire rating for the {name} region today is {status}. Expect extremely hot, dry and windy conditions. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
+        type: 'Standard',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
+      },
     },
-    AskWhichDrink: {
-      ask: 'Sure, which drink would you like to make?',
-      reprompt: 'Which drink would you like to make?',
+    'CODE RED': {
+      ask: 'The fire rating for the {name} region today is {status}. The safest place to be is away from high risk bushfire areas. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
+      card: {
+        type: 'Standard',
+        title: 'Fire Danger for {name} - {status}',
+        text: '{statusCard}',
+      },
     },
   },
-  End: {
-    Message: {
-      tell: "No worries. Thanks for using Cocktail King! <audio src='https://s3-ap-southeast-2.amazonaws.com/alexa-sfx-tylerhamiltonj/out.mp3'/>",
+  FireBan: {
+    None: {
+      ask: 'There is no fire ban for the {name} region today. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
     },
-  },
-  Entry: {
-    Message: {
-      ask: 'Okay, you can search by ingredient name, drink name, or ask for a random drink. What would you like to do?',
-      reprompt: 'What would you like to do?',
-    },
-  },
-  AgeGate: {
-    Ask: {
-      ask: 'Cocktail King contains mature content. Are you over the age of {drinkingAge}?',
-      reprompt: 'Are you over the age of {drinkingAge}?',
-    },
-    Deny: {
-      tell: "Unfortunately, I can't serve you. Come back when you're older.",
-    },
-    Confirm: {
-      say: 'Great! ',
+    Total: {
+      ask: 'There is a total fire ban for the {name} region today. No fires can be lit or be allowed to remain alight in the open air from 12:01 AM until 11:59 PM. What else can I do for you?',
+      reprompt: 'What else can I do for you?',
     },
   },
   Error: {
-    Crash: {
-      tell: "I'm sorry. Cocktail King is a bit tipsy at the moment.",
-    },
-    Unknown: {
-      tell: "I'm sorry. I don't know how to make a {drinkName}.",
-    },
-    UnknownIntentEnd: {
-      tell: "Oh dear, I can't seem to understand you right now. Please try again later.",
-    },
-    UnknownIntent: {
-      ask: "I'm sorry. I didn't understand. {welcomeInstruction}. What would you like to do?",
-      reprompt: '{welcomeInstruction}. What would you like to do?',
-    },
-    UnknownIngredient: {
-      tell: "I'm sorry. I don't know the ingredient {ingredientName}",
-    },
-    Exit: {
-      tell: 'No problem. Come back when you want to make a drink. Thanks for using Cocktail King.',
+    API: {
+      tell: 'There was a problem accessing fire data. Please try again later.',
     },
   },
 };

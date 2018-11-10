@@ -8,7 +8,6 @@ const {
   alexaSkill,
   dialogFlowAction,
 } = require('./app');
-const _ = require('lodash');
 
 console.log(`${'Attempting to start.\r\n\t' +
   'Node version: '}${

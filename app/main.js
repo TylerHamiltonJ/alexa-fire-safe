@@ -7,16 +7,15 @@ const voxaGA = require('voxa-ga');
 const voxaDashbot = require('voxa-dashbot');
 const debug = require('debug')('voxa');
 const log = require('lambda-log');
+const helper = require('../services/helpers');
 
 // Array of states to be use in the app
 const states = [
-  require('./states/drink.states'),
-  require('./states/ageGate.states'),
   require('./states/exit.states'),
+  require('./states/fireban.states'),
+  require('./states/firerating.states'),
   require('./states/help.states'),
-  require('./states/ingredients.states'),
   require('./states/launch.states'),
-  require('./states/randomDrink.states'),
   require('./states/unhandled.states'),
 ];
 
@@ -31,6 +30,7 @@ function register(app) {
   app.onRequestStarted(startTimer);
   app.onBeforeReplySent(clearTimer);
 
+  app.onRequestStarted(getFireData);
   // Init app handlers
   // app.onRequestStarted(getUserFromDB);
   // app.onRequestStarted(initUser);
@@ -149,6 +149,15 @@ function logReply(voxaEvent, reply) {
 function logTransition(voxaEvent, reply, transition) {
   const clonedTransition = _.cloneDeep(transition);
   voxaEvent.log.info('Transition', { transition: clonedTransition });
+}
+
+function getFireData(voxaEvent) {
+  return new Promise(resolve =>
+    helper.getFireData().then((res) => {
+      voxaEvent.model.data = res.results;
+      return resolve();
+    }).catch(err => resolve(err)),
+  );
 }
 
 module.exports.register = register;

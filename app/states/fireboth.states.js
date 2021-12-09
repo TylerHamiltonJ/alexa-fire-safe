@@ -2,7 +2,7 @@ const helper = require('../../services/helpers');
 const regions = require('../../app_data/regions');
 
 exports.register = function register(app) {
-  app.onIntent('FireRatingIntent', (voxaEvent) => {
+  app.onIntent('FireDangerAndRatingIntent', (voxaEvent) => {
     if (!voxaEvent.model.data) {
       return {
         tell: 'Error.API.tell',
@@ -21,7 +21,7 @@ exports.register = function register(app) {
     if (!helper.areaKnown(voxaEvent)) {
       return {
         ask: 'Input.Postcode.ask',
-        to: 'RatingRegionInput',
+        to: 'FireDangerAndRatingInput',
       };
     }
     voxaEvent.model.rating = helper.getDataForArea(voxaEvent);
@@ -31,19 +31,20 @@ exports.register = function register(app) {
         to: 'entry',
       };
     }
-    if (voxaEvent.model.rating.status) {
+    if (!voxaEvent.model.rating) {
       return {
-        ask: `Rating.${voxaEvent.model.rating.status}.ask`,
-        to: 'entry',
+        tell: 'Error.API.tell',
+        to: 'die',
       };
     }
     return {
-      to: 'FireRatingIntent',
+      tell: 'Fire.Both.tell',
+      to: 'die',
     };
   });
 
 
-  app.onState('RatingRegionInput', (voxaEvent) => {
+  app.onState('FireDangerAndRatingInput', (voxaEvent) => {
     if (!voxaEvent.intent.params.area &&
       !voxaEvent.intent.params.postcode) {
       return {
@@ -54,11 +55,11 @@ exports.register = function register(app) {
       !regions.includes(voxaEvent.intent.params.area)) {
       return {
         ask: 'Input.UnknownRegion.ask',
-        to: 'RatingRegionInput',
+        to: 'FireDangerAndRatingInput',
       };
     }
     return {
-      to: 'FireRatingIntent',
+      to: 'FireDangerAndRatingIntent',
     };
   });
 };

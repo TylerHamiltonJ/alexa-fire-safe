@@ -1,0 +1,1461 @@
+[
+  {
+    "data": [
+      {
+        "text": "is there a fire ban",
+        "userDefined": false,
+        "id": "b6ca5546-f313-58f3-8b3c-084dee5216ef"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban ",
+        "userDefined": false,
+        "id": "0a01b01b-6f68-526d-a328-f416003bf64d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      },
+      {
+        "text": " for ",
+        "userDefined": false,
+        "id": "26028edb-485b-5182-878b-879ebc3dd660"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban ",
+        "userDefined": false,
+        "id": "0a01b01b-6f68-526d-a328-f416003bf64d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      },
+      {
+        "text": " for ",
+        "userDefined": false,
+        "id": "26028edb-485b-5182-878b-879ebc3dd660"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban",
+        "userDefined": false,
+        "id": "4e1adea4-b520-52b5-925e-80f2f656e887"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban for ",
+        "userDefined": false,
+        "id": "cbbb09af-d8b9-593c-ad8a-70f2087f804d"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban for ",
+        "userDefined": false,
+        "id": "cbbb09af-d8b9-593c-ad8a-70f2087f804d"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban ",
+        "userDefined": false,
+        "id": "64eae892-a76f-5303-b680-f0f9a737743d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban ",
+        "userDefined": false,
+        "id": "64eae892-a76f-5303-b680-f0f9a737743d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      },
+      {
+        "text": " for ",
+        "userDefined": false,
+        "id": "26028edb-485b-5182-878b-879ebc3dd660"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "would there be a fire ban ",
+        "userDefined": false,
+        "id": "64eae892-a76f-5303-b680-f0f9a737743d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      },
+      {
+        "text": " for ",
+        "userDefined": false,
+        "id": "26028edb-485b-5182-878b-879ebc3dd660"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for the ",
+        "userDefined": false,
+        "id": "5717f117-a712-58bf-86eb-adbe1a432cba"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district",
+        "userDefined": false,
+        "id": "e2d9001e-5e87-57a1-a8d9-4b5a84f0f08a"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for the ",
+        "userDefined": false,
+        "id": "5717f117-a712-58bf-86eb-adbe1a432cba"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district ",
+        "userDefined": false,
+        "id": "2f147d5b-a7fb-599a-97ea-6e7307e43680"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for the ",
+        "userDefined": false,
+        "id": "5717f117-a712-58bf-86eb-adbe1a432cba"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region",
+        "userDefined": false,
+        "id": "2808f44a-4457-5198-bc64-e49386517c1f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for the ",
+        "userDefined": false,
+        "id": "5717f117-a712-58bf-86eb-adbe1a432cba"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region ",
+        "userDefined": false,
+        "id": "8542139b-f35f-57f9-a269-8ae0fd0e812f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for ",
+        "userDefined": false,
+        "id": "d8fcd72d-5835-5787-931c-3379ed2c2f0f"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for ",
+        "userDefined": false,
+        "id": "d8fcd72d-5835-5787-931c-3379ed2c2f0f"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for ",
+        "userDefined": false,
+        "id": "d8fcd72d-5835-5787-931c-3379ed2c2f0f"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for ",
+        "userDefined": false,
+        "id": "d8fcd72d-5835-5787-931c-3379ed2c2f0f"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban ",
+        "userDefined": false,
+        "id": "ae62987c-e4b1-5253-94c4-80a2620e31d1"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban",
+        "userDefined": false,
+        "id": "d7ccab32-0ece-5730-be3c-d8c502b82e33"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status",
+        "userDefined": false,
+        "id": "f55e6315-37c6-53e5-9b46-cfda3d4f64dc"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in the ",
+        "userDefined": false,
+        "id": "49ff8536-6db3-525a-af0f-6caeb827d936"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district",
+        "userDefined": false,
+        "id": "e2d9001e-5e87-57a1-a8d9-4b5a84f0f08a"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in the ",
+        "userDefined": false,
+        "id": "49ff8536-6db3-525a-af0f-6caeb827d936"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district ",
+        "userDefined": false,
+        "id": "2f147d5b-a7fb-599a-97ea-6e7307e43680"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in the ",
+        "userDefined": false,
+        "id": "49ff8536-6db3-525a-af0f-6caeb827d936"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region",
+        "userDefined": false,
+        "id": "2808f44a-4457-5198-bc64-e49386517c1f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in the ",
+        "userDefined": false,
+        "id": "49ff8536-6db3-525a-af0f-6caeb827d936"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region ",
+        "userDefined": false,
+        "id": "8542139b-f35f-57f9-a269-8ae0fd0e812f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in ",
+        "userDefined": false,
+        "id": "7402b436-9eb4-559b-88b1-6d907c251ec6"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in ",
+        "userDefined": false,
+        "id": "7402b436-9eb4-559b-88b1-6d907c251ec6"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in ",
+        "userDefined": false,
+        "id": "7402b436-9eb4-559b-88b1-6d907c251ec6"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status in ",
+        "userDefined": false,
+        "id": "7402b436-9eb4-559b-88b1-6d907c251ec6"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status ",
+        "userDefined": false,
+        "id": "3a04103d-5ac8-5b91-a586-490e1f95127c"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for the ",
+        "userDefined": false,
+        "id": "827642bd-e928-56a0-86b0-5a1d011a5d55"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district",
+        "userDefined": false,
+        "id": "e2d9001e-5e87-57a1-a8d9-4b5a84f0f08a"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for the ",
+        "userDefined": false,
+        "id": "827642bd-e928-56a0-86b0-5a1d011a5d55"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district ",
+        "userDefined": false,
+        "id": "2f147d5b-a7fb-599a-97ea-6e7307e43680"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for the ",
+        "userDefined": false,
+        "id": "827642bd-e928-56a0-86b0-5a1d011a5d55"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region",
+        "userDefined": false,
+        "id": "2808f44a-4457-5198-bc64-e49386517c1f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for the ",
+        "userDefined": false,
+        "id": "827642bd-e928-56a0-86b0-5a1d011a5d55"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region ",
+        "userDefined": false,
+        "id": "8542139b-f35f-57f9-a269-8ae0fd0e812f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for ",
+        "userDefined": false,
+        "id": "6ecef0a7-fddd-58cd-933e-1d8b84a1c90f"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for ",
+        "userDefined": false,
+        "id": "6ecef0a7-fddd-58cd-933e-1d8b84a1c90f"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for ",
+        "userDefined": false,
+        "id": "6ecef0a7-fddd-58cd-933e-1d8b84a1c90f"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for ",
+        "userDefined": false,
+        "id": "6ecef0a7-fddd-58cd-933e-1d8b84a1c90f"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban ",
+        "userDefined": false,
+        "id": "0a01b01b-6f68-526d-a328-f416003bf64d"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for the ",
+        "userDefined": false,
+        "id": "8c6e7141-a99a-582e-8033-4e9e3b3e2eb5"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district",
+        "userDefined": false,
+        "id": "e2d9001e-5e87-57a1-a8d9-4b5a84f0f08a"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for the ",
+        "userDefined": false,
+        "id": "8c6e7141-a99a-582e-8033-4e9e3b3e2eb5"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " district ",
+        "userDefined": false,
+        "id": "2f147d5b-a7fb-599a-97ea-6e7307e43680"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for the ",
+        "userDefined": false,
+        "id": "8c6e7141-a99a-582e-8033-4e9e3b3e2eb5"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region",
+        "userDefined": false,
+        "id": "2808f44a-4457-5198-bc64-e49386517c1f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for the ",
+        "userDefined": false,
+        "id": "8c6e7141-a99a-582e-8033-4e9e3b3e2eb5"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " region ",
+        "userDefined": false,
+        "id": "8542139b-f35f-57f9-a269-8ae0fd0e812f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for ",
+        "userDefined": false,
+        "id": "abbb577a-c02d-5374-b23f-2e60c5d8b244"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for ",
+        "userDefined": false,
+        "id": "abbb577a-c02d-5374-b23f-2e60c5d8b244"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for ",
+        "userDefined": false,
+        "id": "abbb577a-c02d-5374-b23f-2e60c5d8b244"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban status for ",
+        "userDefined": false,
+        "id": "abbb577a-c02d-5374-b23f-2e60c5d8b244"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "there's a fire ban for ",
+        "userDefined": false,
+        "id": "1d1b033d-dbe0-54f5-a7e5-1843211b98a1"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      },
+      {
+        "text": " ",
+        "userDefined": false,
+        "id": "41a07dab-dad3-561b-ad06-14cbcd983f62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "fire ban for ",
+        "userDefined": false,
+        "id": "6ecef0a7-fddd-58cd-933e-1d8b84a1c90f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "if there is a fire ban",
+        "userDefined": false,
+        "id": "1c351947-2c01-5d5d-9751-eb2cba78e895"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "if there is a fire ban for ",
+        "userDefined": false,
+        "id": "086af1b3-9feb-5c04-8cd8-f4e0ef4f01c5"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "if there is a fire ban for ",
+        "userDefined": false,
+        "id": "086af1b3-9feb-5c04-8cd8-f4e0ef4f01c5"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "if there is a fire ban for ",
+        "userDefined": false,
+        "id": "086af1b3-9feb-5c04-8cd8-f4e0ef4f01c5"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "if there is a fire ban ",
+        "userDefined": false,
+        "id": "dc120f8b-ebc1-5494-a395-3e4048b6c1c2"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "is there a fire ban for ",
+        "userDefined": false,
+        "id": "d8fcd72d-5835-5787-931c-3379ed2c2f0f"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "tell if it's a fire ban",
+        "userDefined": false,
+        "id": "4a1bad97-8c1f-5015-b2b5-64b622b56abd"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "tell if it's a fire ban for ",
+        "userDefined": false,
+        "id": "eda38f72-b80e-59a5-add6-f4444ac7318b"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "tell if it's a fire ban for ",
+        "userDefined": false,
+        "id": "eda38f72-b80e-59a5-add6-f4444ac7318b"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "tell if it's a fire ban for ",
+        "userDefined": false,
+        "id": "eda38f72-b80e-59a5-add6-f4444ac7318b"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "tell if it's a fire ban ",
+        "userDefined": false,
+        "id": "f1af5c0d-6002-58d2-8ca7-42f33233c6cb"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "will there be a fire ban",
+        "userDefined": false,
+        "id": "01a87330-a4d9-51e8-aad3-7a646d262af3"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "will there be a fire ban for ",
+        "userDefined": false,
+        "id": "c63aa480-beb3-5c6c-9ed7-eaaf51d1b3d3"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "will there be a fire ban for ",
+        "userDefined": false,
+        "id": "c63aa480-beb3-5c6c-9ed7-eaaf51d1b3d3"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "will there be a fire ban for ",
+        "userDefined": false,
+        "id": "c63aa480-beb3-5c6c-9ed7-eaaf51d1b3d3"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "will there be a fire ban ",
+        "userDefined": false,
+        "id": "13b647c0-568f-5ef0-8b3e-ad8327887d62"
+      },
+      {
+        "meta": "@sys.date",
+        "alias": "date",
+        "text": "{date}",
+        "userDefined": true,
+        "id": "e6de13c2-af52-5f84-9202-7fc1b73e4532"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

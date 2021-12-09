@@ -1,94 +1,69 @@
 const helper = require('../../services/helpers');
-
-const regions = [
-  'Mallee',
-  'Wimmera',
-  'South West',
-  'Northern Country',
-  'North Central',
-  'Central',
-  'North East',
-  'West and South Gippsland',
-  'East Gippsland',
-];
+const regions = require('../../app_data/regions');
 
 exports.register = function register(app) {
   app.onIntent('FireBanIntent', (voxaEvent) => {
-    const slot = voxaEvent.intent.params;
-    const model = voxaEvent.model;
-    if (!model.data) {
+    if (!voxaEvent.model.data) {
       return {
-        reply: 'Error.API',
+        tell: 'Error.API.tell',
         to: 'die',
       };
     }
-    if (slot.area || slot.postcode || model.postcode) {
-      console.log(slot.postcode);
-      const data = helper.findFireBan(slot, model);
-      if (data) {
-        voxaEvent.model.rating = data;
-        if (data.status.includes('NO')) {
-          return {
-            reply: 'FireBan.None',
-            to: 'entry',
-          };
-        }
-        return {
-          reply: 'FireBan.Total',
-          to: 'entry',
-        };
-      }
+    if (helper.platformName(voxaEvent) !== 'dialogflow'
+    && !voxaEvent.model.postcode) {
       return {
-        reply: 'Intent.Region',
+        dialogFlowPermission: {
+          context: 'To find the fire ban status of your area',
+          permissions: 'DEVICE_PRECISE_LOCATION',
+        },
+      };
+    }
+    if (!helper.areaKnown(voxaEvent)) {
+      return {
+        ask: 'Input.Postcode.ask',
         to: 'BanRegionInput',
       };
     }
-    return helper.getPostCode(voxaEvent).then((postcode) => {
-      if (!postcode) {
-        return {
-          reply: 'Intent.Region',
-          to: 'BanRegionInput',
-        };
-      }
-      model.postcode = postcode;
+    voxaEvent.model.rating = helper.getDataForArea(voxaEvent);
+    console.log(voxaEvent.model.rating);
+    if (voxaEvent.model.rating.error) {
       return {
-        to: 'FireBanIntent',
-      };
-    });
-  });
-  app.onState('BanRegionInput', (voxaEvent) => {
-    const slot = voxaEvent.intent.params;
-    const intent = voxaEvent.intent.name;
-    if (slot.area || slot.postcode) {
-      console.log(slot.postcode);
-      if (slot.area && !regions.includes(slot.area)) {
-        return {
-          reply: 'Intent.UnknownRegion',
-          to: 'BanRegionInput',
-        };
-      }
-      return {
-        to: 'FireBanIntent',
-      };
-    }
-    if (intent === 'AMAZON.HelpIntent') {
-      return {
-        reply: 'Intent.Help',
+        ask: 'Error.Invalid.ask',
         to: 'entry',
       };
     }
-    if (
-      ['AMAZON.NoIntent', 'AMAZON.CancelIntent', 'AMAZON.StopIntent'].includes(
-        intent,
-      )
-    ) {
+    if (!voxaEvent.model.rating) {
       return {
-        to: 'End',
+        ask: 'Intent.Region.ask',
+        to: 'BanRegionInput',
+      };
+    }
+    if (voxaEvent.model.rating.fireban) {
+      return {
+        ask: 'FireBan.Total.ask',
+        to: 'entry',
       };
     }
     return {
-      reply: 'Intent.Region',
-      to: 'BanRegionInput',
+      ask: 'FireBan.None.ask',
+      to: 'entry',
+    };
+  });
+  app.onState('BanRegionInput', (voxaEvent) => {
+    const slot = voxaEvent.intent.params;
+    if (!slot.area && !slot.postcode) {
+      return {
+        to: 'entry',
+      };
+    }
+    if (slot.area && !regions.includes(slot.area)) {
+      return {
+        ask: 'Input.UnknownRegion.ask',
+        to: 'BanRegionInput',
+      };
+    }
+    return {
+      to: 'FireBanIntent',
     };
   });
 };

@@ -1,0 +1,34 @@
+{
+  "name": "FireDangerAndRatingIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "FireDangerAndRatingIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.zip-code",
+          "name": "postcode",
+          "value": "$postcode",
+          "isList": false
+        },
+        {
+          "dataType": "@list-of-areas",
+          "name": "area",
+          "value": "$area",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "21c3e4f3-ee57-55f7-89ad-60768e6668c5"
+}

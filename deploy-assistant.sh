@@ -6,11 +6,11 @@ if [ "$GIT_BRANCH" == "origin/production" ] ;
 then
   export NODE_ENV=production
   export ASSISTANT_MODEL=production
-  export PROJECT_ID=nib-health-production
+  export PROJECT_ID=fire-safe-health-production
 elif [ "$GIT_BRANCH" == "origin/staging" ] ;
 then
   export NODE_ENV=staging
-  export PROJECT_ID=nib-health-staging
+  export PROJECT_ID=fire-safe-health-staging
   export ASSISTANT_MODEL=staging
 fi
 

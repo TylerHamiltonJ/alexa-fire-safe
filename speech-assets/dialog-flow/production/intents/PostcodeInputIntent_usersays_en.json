@@ -1,0 +1,40 @@
+[
+  {
+    "data": [
+      {
+        "text": "my postcode is ",
+        "userDefined": false,
+        "id": "2b09bbf0-09dc-5031-b485-ef2a1ef2ef7d"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "it's ",
+        "userDefined": false,
+        "id": "5c1fb72f-a828-59c0-9ae4-a1b90ab3c672"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

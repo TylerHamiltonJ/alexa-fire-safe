@@ -587,6 +587,13 @@ aws4@^1.2.1, aws4@^1.6.0, aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
+axios@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+  integrity sha1-LJ1jiy4ZGgjqHWzJiOrda6W9wFM=
+  dependencies:
+    follow-redirects "1.0.0"
+
 axios@^0.18.0:
   version "0.18.0"
   resolved "http://registry.npmjs.org/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
@@ -2441,6 +2448,13 @@ flatmap-stream@^0.1.0:
   resolved "https://registry.yarnpkg.com/flatmap-stream/-/flatmap-stream-0.1.0.tgz#ed54e01422cd29281800914fcb968d58b685d5f1"
   integrity sha512-Nlic4ZRYxikqnK5rj3YoxDVKGGtUjcNDUtvQ7XsdGLZmMwdUYnXf10o1zcXtzEZTBgc6GxeRpQxV/Wu3WPIIHA==
 
+follow-redirects@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.0.0.tgz#8e34298cbd2e176f254effec75a1c78cc849fd37"
+  integrity sha1-jjQpjL0uF28lTv/sdaHHjMhJ/Tc=
+  dependencies:
+    debug "^2.2.0"
+
 follow-redirects@^1.3.0:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.8.tgz#1dbfe13e45ad969f813e86c00e5296f525c885a1"
@@ -3967,6 +3981,13 @@ latest-version@^3.0.0:
   integrity sha1-ogU4P+oyKzO1rjsYq+4NwvNW7hU=
   dependencies:
     package-json "^4.0.0"
+
+latlng-to-zip@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/latlng-to-zip/-/latlng-to-zip-0.0.1.tgz#2cac49c918806364332024e98b3b87a6b5546f23"
+  integrity sha1-LKxJyRiAY2QzICTpizuHprVUbyM=
+  dependencies:
+    axios "^0.15.3"
 
 lazystream@^1.0.0:
   version "1.0.0"
@@ -6838,10 +6859,10 @@ vinyl@^0.5.0:
     clone-stats "^0.0.1"
     replace-ext "0.0.1"
 
-voxa-cli@1.0.2-alpha21:
-  version "1.0.2-alpha21"
-  resolved "https://registry.yarnpkg.com/voxa-cli/-/voxa-cli-1.0.2-alpha21.tgz#5282086e7a7e7408b0abd0d925498fb9865444c8"
-  integrity sha512-faxLilodiFdqixicBbBxUCLZWdYySJKMdtr7K/OizSYwPeiA3XA0R4NNx29hvBWKM1Fyj4CB036dYLcG3X0FEg==
+voxa-cli@1.0.2-alpha25:
+  version "1.0.2-alpha25"
+  resolved "https://registry.yarnpkg.com/voxa-cli/-/voxa-cli-1.0.2-alpha25.tgz#4224cec51f00da50fad67870dd5906a7003eed3d"
+  integrity sha512-Wnfy9MMUEdcUJBVm4q1nBBegBBEbDDl9kzfPpr24DUNYw7azQdaaiVg4zbbJi9sm3JgnVosCSnltD+qCGXWPDQ==
   dependencies:
     bluebird "^3.5.0"
     chai "^4.0.2"

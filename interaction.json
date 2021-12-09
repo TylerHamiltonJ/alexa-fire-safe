@@ -7,7 +7,7 @@
     "apis.custom.endpoint.sslCertificateType": "Wildcard",
     "events.endpoint.sslCertificateType": "Wildcard"
   },
-  "spreadsheets": ["17Lr1-JVfKZkxHPpb4FH-CJql_iXR16x_SHtEhlRfiM0"],
+  "spreadsheets": ["1ozg4JUCWQ4Y-unG2qU78W2EyOkgywbrp5xs4oSe3Jd8"],
   "platform": ["alexa", "dialogFlow"],
-  "content": ["ValidDrinks", "ValidIngredients","suggestedIngredients","suggestedDrinks"]
+  "content": []
 }

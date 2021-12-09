@@ -10,7 +10,7 @@ exports.register = function register(app) {
   }));
 
   app.onState('End', () => ({
-    reply: 'Intent.End',
+    tell: 'Intent.End.tell',
     to: 'die',
   }));
 };

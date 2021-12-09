@@ -1,0 +1,40 @@
+{
+  "name": "FireBanIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "FireBanIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.zip-code",
+          "name": "postcode",
+          "value": "$postcode",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@list-of-areas",
+          "name": "area",
+          "value": "$area",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "690a254b-ab43-5d54-be42-7c4c52153a3c"
+}

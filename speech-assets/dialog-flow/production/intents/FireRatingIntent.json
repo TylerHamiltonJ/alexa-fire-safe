@@ -1,0 +1,40 @@
+{
+  "name": "FireRatingIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "FireRatingIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.zip-code",
+          "name": "postcode",
+          "value": "$postcode",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@list-of-areas",
+          "name": "area",
+          "value": "$area",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "c4faa474-f3c3-56ba-bbfc-41d3019bdece"
+}

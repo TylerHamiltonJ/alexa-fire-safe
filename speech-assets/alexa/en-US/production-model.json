@@ -1,0 +1,403 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "fire safe",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": [],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me",
+            "how do i use this",
+            "i'm stuck"
+          ],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "yeah",
+            "yep",
+            "okay"
+          ],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no thanks",
+            "nope",
+            "nup"
+          ],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [],
+          "slots": []
+        },
+        {
+          "name": "FireBanIntent",
+          "samples": [
+            "is there a fire ban",
+            "fire ban {date} for {area}",
+            "fire ban {date} for {postcode}",
+            "would there be a fire ban",
+            "would there be a fire ban for {area}",
+            "would there be a fire ban for {postcode}",
+            "would there be a fire ban {date}",
+            "would there be a fire ban {date} for {area}",
+            "would there be a fire ban {date} for {postcode}",
+            "is there a fire ban for the {area} district",
+            "is there a fire ban for the {area} district {date}",
+            "is there a fire ban for the {area} region",
+            "is there a fire ban for the {area} region {date}",
+            "is there a fire ban for {area}",
+            "is there a fire ban for {area} {date}",
+            "is there a fire ban for {postcode}",
+            "is there a fire ban for {postcode} {date}",
+            "is there a fire ban {date}",
+            "fire ban",
+            "fire ban status",
+            "fire ban status in the {area} district",
+            "fire ban status in the {area} district {date}",
+            "fire ban status in the {area} region",
+            "fire ban status in the {area} region {date}",
+            "fire ban status in {area}",
+            "fire ban status in {area} {date}",
+            "fire ban status in {postcode}",
+            "fire ban status in {postcode} {date}",
+            "fire ban status {date}",
+            "fire ban for the {area} district",
+            "fire ban for the {area} district {date}",
+            "fire ban for the {area} region",
+            "fire ban for the {area} region {date}",
+            "fire ban for {area}",
+            "fire ban for {area} {date}",
+            "fire ban for {postcode}",
+            "fire ban for {postcode} {date}",
+            "fire ban {date}",
+            "fire ban status for the {area} district",
+            "fire ban status for the {area} district {date}",
+            "fire ban status for the {area} region",
+            "fire ban status for the {area} region {date}",
+            "fire ban status for {area}",
+            "fire ban status for {area} {date}",
+            "fire ban status for {postcode}",
+            "fire ban status for {postcode} {date}",
+            "there's a fire ban for {postcode} {date}",
+            "fire ban for {date}",
+            "if there is a fire ban",
+            "if there is a fire ban for {area}",
+            "if there is a fire ban for {date}",
+            "if there is a fire ban for {postcode}",
+            "if there is a fire ban {date}",
+            "is there a fire ban for {date}",
+            "tell if it's a fire ban",
+            "tell if it's a fire ban for {area}",
+            "tell if it's a fire ban for {date}",
+            "tell if it's a fire ban for {postcode}",
+            "tell if it's a fire ban {date}",
+            "will there be a fire ban",
+            "will there be a fire ban for {area}",
+            "will there be a fire ban for {date}",
+            "will there be a fire ban for {postcode}",
+            "will there be a fire ban {date}"
+          ],
+          "slots": [
+            {
+              "name": "postcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": []
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": []
+            },
+            {
+              "name": "area",
+              "type": "LIST_OF_AREAS",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "FireRatingIntent",
+          "samples": [
+            "tell me the danger",
+            "tell me the danger for {area}",
+            "tell me the danger for {area} {date}",
+            "tell me the danger for {postcode}",
+            "tell me the danger for {postcode} {date}",
+            "tell me the danger {date}",
+            "tell me the fire danger",
+            "tell me the fire danger for {area}",
+            "tell me the fire danger for {area} {date}",
+            "tell me the fire danger for {postcode}",
+            "tell me the fire danger for {postcode} {date}",
+            "tell me the fire danger {date}",
+            "tell me the fire level",
+            "tell me the fire level for {area}",
+            "tell me the fire level for {area} {date}",
+            "tell me the fire level for {postcode}",
+            "tell me the fire level for {postcode} {date}",
+            "tell me the fire level {date}",
+            "tell me the fire rating",
+            "tell me the fire rating for {area}",
+            "tell me the fire rating for {area} {date}",
+            "tell me the fire rating for {postcode}",
+            "tell me the fire rating for {postcode} {date}",
+            "tell me the fire rating {date}",
+            "tell me the fire safety rating",
+            "tell me the fire safety rating for {area}",
+            "tell me the fire safety rating for {area} {date}",
+            "tell me the fire safety rating for {postcode}",
+            "tell me the fire safety rating for {postcode} {date}",
+            "tell me the fire safety rating {date}",
+            "tell me the fire status",
+            "tell me the fire status for {area}",
+            "tell me the fire status for {area} {date}",
+            "tell me the fire status for {postcode}",
+            "tell me the fire status for {postcode} {date}",
+            "tell me the fire status {date}",
+            "tell me the rating",
+            "tell me the rating for {area}",
+            "tell me the rating for {area} {date}",
+            "tell me the rating for {postcode}",
+            "tell me the rating for {postcode} {date}",
+            "tell me the rating {date}",
+            "what is the danger",
+            "what is the danger for {area}",
+            "what is the danger for {area} {date}",
+            "what is the danger for {postcode}",
+            "what is the danger for {postcode} {date}",
+            "what is the danger {date}",
+            "what is the fire danger",
+            "what is the fire danger for {area}",
+            "what is the fire status for {postcode}",
+            "what is the fire status for {postcode} {date}",
+            "what is the fire status {date}",
+            "what is the rating",
+            "what is the rating for {area}",
+            "what is the rating for {area} {date}",
+            "what is the rating for {postcode}",
+            "what is the rating for {postcode} {date}",
+            "what is the rating {date}",
+            "what's the danger",
+            "what's the danger for {area}",
+            "what's the danger for {area} {date}",
+            "what's the danger for {postcode}",
+            "what's the danger for {postcode} {date}",
+            "what's the danger {date}",
+            "what's the fire danger",
+            "what's the fire danger for {area}",
+            "what's the fire danger for {area} {date}",
+            "what's the fire danger for {postcode}",
+            "what's the fire danger for {postcode} {date}",
+            "what's the fire danger {date}",
+            "what's the fire level",
+            "what's the fire level for {area}",
+            "what's the fire level for {area} {date}",
+            "what's the fire level for {postcode}",
+            "what's the fire level for {postcode} {date}",
+            "what's the fire level {date}",
+            "what's the fire rating",
+            "what's the fire rating for {area}",
+            "what's the fire rating for {area} {date}",
+            "what's the fire rating for {postcode}",
+            "what's the fire rating for {postcode} {date}",
+            "what's the fire rating {date}",
+            "what's the fire safety rating",
+            "what's the fire safety rating for {area}",
+            "what's the fire safety rating for {area} {date}",
+            "what's the fire safety rating for {postcode}",
+            "what's the fire safety rating for {postcode} {date}",
+            "what's the fire safety rating {date}",
+            "what's the fire status",
+            "what's the fire status for {area}",
+            "what's the fire status for {area} {date}",
+            "what's the fire status for {postcode}",
+            "what's the fire status for {postcode} {date}",
+            "what's the fire status {date}",
+            "what's the rating",
+            "what's the rating for {area}",
+            "what's the rating for {area} {date}",
+            "what's the rating for {postcode}",
+            "what's the rating for {postcode} {date}",
+            "what's the rating {date}",
+            "what's the fire danger rating for {area}",
+            "what's the fire danger rating for {postcode}",
+            "what's the fire danger rating"
+          ],
+          "slots": [
+            {
+              "name": "postcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": []
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": []
+            },
+            {
+              "name": "area",
+              "type": "LIST_OF_AREAS",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "PostcodeInputIntent",
+          "samples": [
+            "my postcode is {postcode}",
+            "it's {postcode}"
+          ],
+          "slots": [
+            {
+              "name": "postcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "PostcodeInputOnlyIntent",
+          "samples": [
+            "{postcode}"
+          ],
+          "slots": [
+            {
+              "name": "postcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "RegionNameIntent",
+          "samples": [
+            "the {area} region",
+            "{area} region",
+            "i'm in the {area}",
+            "i'm in {area}"
+          ],
+          "slots": [
+            {
+              "name": "area",
+              "type": "LIST_OF_AREAS",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "RegionNameOnlyIntent",
+          "samples": [
+            "{area}"
+          ],
+          "slots": [
+            {
+              "name": "area",
+              "type": "LIST_OF_AREAS",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "FireDangerAndRatingIntent",
+          "samples": [
+            "what about in {area}",
+            "what about in {postcode}",
+            "what about {area}",
+            "what about {postcode}",
+            "how about in {area}",
+            "how about in {postcode}",
+            "how about {area}",
+            "how about {postcode}"
+          ],
+          "slots": [
+            {
+              "name": "postcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": []
+            },
+            {
+              "name": "area",
+              "type": "LIST_OF_AREAS",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "actionsPermissionIntent",
+          "samples": [
+            "actionspermission intent"
+          ],
+          "slots": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "central"
+              }
+            },
+            {
+              "name": {
+                "value": "east gippsland"
+              }
+            },
+            {
+              "name": {
+                "value": "mallee"
+              }
+            },
+            {
+              "name": {
+                "value": "north central"
+              }
+            },
+            {
+              "name": {
+                "value": "north east"
+              }
+            },
+            {
+              "name": {
+                "value": "northern country"
+              }
+            },
+            {
+              "name": {
+                "value": "south west"
+              }
+            },
+            {
+              "name": {
+                "value": "west and south gippsland"
+              }
+            },
+            {
+              "name": {
+                "value": "wimmera"
+              }
+            }
+          ],
+          "name": "LIST_OF_AREAS"
+        }
+      ]
+    }
+  }
+}

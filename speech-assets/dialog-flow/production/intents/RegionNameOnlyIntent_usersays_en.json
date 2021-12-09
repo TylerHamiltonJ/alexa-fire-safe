@@ -1,0 +1,16 @@
+[
+  {
+    "data": [
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -4,24 +4,11 @@
 	  "hostSkill": true
 	},
 	"aws": {
-	  "region": "us-east-2"
-	},
-	"raven": {
-	  "DSN": "https://6fd73d710f104778b2bf0a131a43e0fd@sentry.io/1288504",
-	  "environment": "staging"
-	},
-	"dynamoDB": {
-	  "tables": {
-		"users": "nib-user-staging"
-	  }
-	},
-	"s3": {
-	  "bucket": "nib-health-staging",
-	  "url": "https://s3.amazonaws.com/nib-health-staging/"
+	  "region": "us-west-2"
 	},
 	"googleAnalytics": {
 	  "trackingId": "",
-	  "appName": "nib-health-staging",
+	  "appName": "fire-safe-staging",
 	  "ignoreUsers": [],
 	  "suppressSending": false,
 	  "debug": true
@@ -36,12 +23,9 @@
 		  "api_key": ""
 		}
 	  },
-	"timezone": "America/New_York",
+	"timezone": "Australia/Melbourne",
 	"cloudwatch": {
-	  "namespace": "NIB Staging"
-	},
-	"api": {
-	  "baseURL": "https://api.staging.nib.com/"
+	  "namespace": "Fire Safe"
 	},
 	"enableTestStates": true
   }

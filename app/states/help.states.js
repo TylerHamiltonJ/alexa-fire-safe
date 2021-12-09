@@ -1,6 +1,6 @@
 exports.register = function register(app) {
   app.onIntent('HelpIntent', () => ({
-    reply: 'Intent.Help',
+    ask: 'Intent.Help.ask',
     to: 'entry',
   }));
 };

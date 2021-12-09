@@ -1,0 +1,154 @@
+[
+  {
+    "data": [
+      {
+        "text": "what about in ",
+        "userDefined": false,
+        "id": "9904107b-b0a4-597f-9051-d8f02da77e0d"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "what about in ",
+        "userDefined": false,
+        "id": "9904107b-b0a4-597f-9051-d8f02da77e0d"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "what about ",
+        "userDefined": false,
+        "id": "15d8c396-7125-5e29-bb68-cff023ea9b96"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "what about ",
+        "userDefined": false,
+        "id": "15d8c396-7125-5e29-bb68-cff023ea9b96"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "how about in ",
+        "userDefined": false,
+        "id": "cde55dd9-4210-5556-90c0-f7a64a103504"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "how about in ",
+        "userDefined": false,
+        "id": "cde55dd9-4210-5556-90c0-f7a64a103504"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "how about ",
+        "userDefined": false,
+        "id": "93ade6c4-3bef-53f2-8458-d90c85db8be8"
+      },
+      {
+        "meta": "@list-of-areas",
+        "alias": "area",
+        "text": "{area}",
+        "userDefined": true,
+        "id": "a85e7903-ecaa-58c4-afee-b863d08a42a7"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "how about ",
+        "userDefined": false,
+        "id": "93ade6c4-3bef-53f2-8458-d90c85db8be8"
+      },
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

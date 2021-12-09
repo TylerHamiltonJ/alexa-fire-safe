@@ -8,12 +8,14 @@ const voxaDashbot = require('voxa-dashbot');
 const debug = require('debug')('voxa');
 const log = require('lambda-log');
 const helper = require('../services/helpers');
+const localData = require('../services/localData');
 
 // Array of states to be use in the app
 const states = [
   require('./states/exit.states'),
   require('./states/fireban.states'),
   require('./states/firerating.states'),
+  require('./states/fireboth.states'),
   require('./states/help.states'),
   require('./states/launch.states'),
   require('./states/unhandled.states'),
@@ -87,7 +89,7 @@ function register(app) {
   // Handler functions
   async function errorHandler(event, err, reply) {
     event.log.error(err);
-    const statement = await event.renderer.renderPath('Error.Crash.tell', event);
+    const statement = await event.renderer.renderPath('Error.API.tell', event);
     reply.clear();
     reply.addStatement(statement);
     reply.terminate();
@@ -152,12 +154,12 @@ function logTransition(voxaEvent, reply, transition) {
 }
 
 function getFireData(voxaEvent) {
-  return new Promise(resolve =>
-    helper.getFireData().then((res) => {
-      voxaEvent.model.data = res.results;
-      return resolve();
-    }).catch(err => resolve(err)),
-  );
+  const getPostcode = localData.getPostcode(voxaEvent);
+  const getFire = helper.getFireData();
+  return Promise.all([getPostcode, getFire]).then((res) => {
+    voxaEvent.model.data = res[1].results;
+    return true;
+  }).catch(err => err);
 }
 
 module.exports.register = register;

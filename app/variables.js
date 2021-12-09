@@ -1,12 +1,34 @@
+const _ = require('lodash');
+const moment = require('moment-timezone');
 // TODO build variables here
 
-exports.status = model => model.rating.status;
-exports.name = model => model.rating.name;
-exports.postcode = model => model.postcode;
-exports.data = model => model.data;
-exports.rating = model => model.rating;
-exports.statusCard = (model) => {
-  switch (model.rating.status) {
+exports.status = voxaEvent => voxaEvent.model.rating.status;
+exports.fireBan = voxaEvent => voxaEvent.model.rating.fireBan;
+exports.calendarDate = (voxaEvent) => {
+  const date = _.get(voxaEvent, 'model.rating.date', moment());
+  return moment(date).calendar(moment(), {
+    sameDay: '[today]',
+    nextDay: '[tomorrow]',
+    nextWeek: 'dddd',
+    lastDay: '[yesterday]',
+    lastWeek: '[last] dddd',
+    sameElse: '[for the] DD/MM/YYYY',
+  });
+};
+exports.name = voxaEvent => voxaEvent.model.rating.name;
+exports.areaName = voxaEvent => voxaEvent.model.rating.name;
+exports.postcode = voxaEvent => voxaEvent.model.postcode;
+exports.data = voxaEvent => voxaEvent.model.data;
+exports.rating = voxaEvent => voxaEvent.model.rating;
+exports.firebanBoth = (voxaEvent) => {
+  if (this.fireBan(voxaEvent)) {
+    return `There's currently a fire ban for ${this.areaName(voxaEvent)} for ${this.calendarDate(voxaEvent)}. No fires can be lit or be allowed to remain alight in the open air from 12:01 AM until 11:59 PM`;
+  }
+  return `There's no fire ban for ${this.areaName(voxaEvent)} for ${this.calendarDate(voxaEvent)}, however restrictions may apply`;
+};
+exports.fireRatingBoth = voxaEvent => `The fire danger rating is ${this.status(voxaEvent)}`;
+exports.statusCard = (voxaEvent) => {
+  switch (voxaEvent.model.rating.status) {
     case 'LOW-MODERATE':
     case 'HIGH':
     case 'VERY HIGH':

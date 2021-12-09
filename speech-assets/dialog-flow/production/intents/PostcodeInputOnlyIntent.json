@@ -1,0 +1,28 @@
+{
+  "name": "PostcodeInputOnlyIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "PostcodeInputOnlyIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.zip-code",
+          "name": "postcode",
+          "value": "$postcode",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "b7775c54-2ad2-5b77-8ca7-0ddd0ba9c54a"
+}

@@ -16,7 +16,7 @@ exports.register = function register(skill) {
       };
     }
     return {
-      reply: 'Intent.NotHeard',
+      ask: 'Intent.NotHeard.ask',
       to: 'entry',
     };
   });

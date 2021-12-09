@@ -1,0 +1,16 @@
+[
+  {
+    "data": [
+      {
+        "meta": "@sys.zip-code",
+        "alias": "postcode",
+        "text": "{postcode}",
+        "userDefined": true,
+        "id": "c59c094e-e572-5e47-928d-b998e4bece8f"
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

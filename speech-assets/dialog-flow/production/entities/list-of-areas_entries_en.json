@@ -1,0 +1,56 @@
+[
+  {
+    "value": "central",
+    "synonyms": [
+      "central"
+    ]
+  },
+  {
+    "value": "east gippsland",
+    "synonyms": [
+      "east gippsland"
+    ]
+  },
+  {
+    "value": "mallee",
+    "synonyms": [
+      "mallee"
+    ]
+  },
+  {
+    "value": "north central",
+    "synonyms": [
+      "north central"
+    ]
+  },
+  {
+    "value": "north east",
+    "synonyms": [
+      "north east"
+    ]
+  },
+  {
+    "value": "northern country",
+    "synonyms": [
+      "northern country"
+    ]
+  },
+  {
+    "value": "south west",
+    "synonyms": [
+      "south west"
+    ]
+  },
+  {
+    "value": "west and south gippsland",
+    "synonyms": [
+      "west and south gippsland"
+    ]
+  },
+  {
+    "value": "wimmera",
+    "synonyms": [
+      "wimmera"
+    ]
+  }
+]

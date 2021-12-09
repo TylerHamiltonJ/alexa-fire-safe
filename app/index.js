@@ -19,14 +19,3 @@ exports.alexaSkill = alexaSkill;
 const dialogFlowAction = new voxa.DialogFlowPlatform(app);
 exports.dialogFlow = dialogFlowAction.lambdaHTTP();
 exports.dialogFlowAction = dialogFlowAction;
-
-// // alexa
-// alexaSkill.app.directiveHandlers.push(alexaStates.MetaDataPlayAudioDirective);
-// exports.alexa = RavenLambdaWrapper.handler(Raven, alexaSkill.lambda());
-// exports.handler = RavenLambdaWrapper.handler(Raven, alexaSkill.lambda());
-
-// // dialogFlow
-// const dialogFlowAction = new voxa.DialogFlowPlatform(app);
-// dialogFlowStates.register(dialogFlowAction);
-// exports.dialogFlow = RavenLambdaWrapper.handler(Raven, dialogFlowAction.lambdaHTTP());
-// exports.dialogFlowAction = dialogFlowAction;

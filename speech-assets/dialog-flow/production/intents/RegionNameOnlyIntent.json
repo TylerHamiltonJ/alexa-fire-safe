@@ -1,0 +1,28 @@
+{
+  "name": "RegionNameOnlyIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "RegionNameOnlyIntent",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@list-of-areas",
+          "name": "area",
+          "value": "$area",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "id": "833c5baa-0e19-569f-a04e-21923c2d4b86"
+}

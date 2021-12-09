@@ -1,6 +1,7 @@
 const unirest = require('unirest');
 const ausPost = require('../services/auspostService');
-const AlexaDeviceAddressClient = require('../services/AlexaDeviceAddressClient');
+const _ = require('lodash');
+const moment = require('moment-timezone');
 
 const fireData = () =>
   new Promise((resolve, reject) =>
@@ -10,71 +11,65 @@ const fireData = () =>
   );
 
 const location = postcode => ausPost.getAreaName(postcode);
+const getArea = (voxaEvent) => {
+  if (voxaEvent.model.area) {
+    return voxaEvent.model.area;
+  }
+  if (voxaEvent.model.postcode) {
+    return location(voxaEvent.model.postcode);
+  }
+  if (voxaEvent.intent.params.postcode) {
+    return location(voxaEvent.intent.params.postcode);
+  }
+  if (voxaEvent.intent.params.area) {
+    return voxaEvent.intent.params.area;
+  }
+  return null;
+};
+
+const getDataForArea = (data, area, date) => {
+  console.log(data);
+  console.log(area);
+  console.log(date);
+  const getDate = (d) => {
+    if (d) {
+      return moment(d).format('DD/MM/YYYY');
+    }
+    return moment().tz('Australia/Melbourne').format('DD/MM/YYYY');
+  };
+  const t = getDate(date);
+  const filteredData = data.filter(f => f.issueFor === t)
+    .map(m => m.declareList
+      .filter(a => a.name.toLowerCase() === area.toLowerCase()))
+      .map(m => m[0].status);
+  if (!filteredData[0]) {
+    return { error: 'No Data' };
+  }
+  return {
+    fireban: !filteredData[0].includes('NO'),
+    status: filteredData[1],
+    name: area,
+    date,
+  };
+};
 module.exports = {
-  getPostCode: alexaEvent => new Promise((resolve) => {
-    if (alexaEvent.context.System.user.permissions) {
-      const addressClient = new AlexaDeviceAddressClient(
-        alexaEvent.context.System.apiEndpoint,
-        alexaEvent.context.System.device.deviceId,
-        alexaEvent.context.System.user.permissions.consentToken,
-      );
-      return addressClient
-        .getCountryAndPostalCode()
-        .then(addressResult =>
-          addressResult.address.postalCode,
-        )
-        .catch(() => null);
+  areaKnown: (voxaEvent) => {
+    if (!voxaEvent.model.area &&
+      !voxaEvent.model.postcode &&
+      !voxaEvent.intent.params.postcode &&
+      !voxaEvent.intent.params.area) {
+      return false;
     }
-    return resolve(null);
-  }),
-  getFireData: () => fireData().then(data => data),
-  findFireRating: (slot, model) => {
-    if (slot.area) {
-      const foundLoation = model.data
-        .find(t => !t.status)
-        .declareList.find(
-          f => f.name.toLowerCase() === slot.area.toLowerCase(),
-        );
-      return foundLoation;
-    }
-    const postalCode = slot.postcode ? slot.postcode : model.postcode;
-    if (postalCode) {
-      try {
-        const postcode = location(postalCode);
-        const foundLoation = model.data
-          .find(t => !t.status)
-          .declareList.find(f => f.name === postcode);
-        return foundLoation;
-      } catch (err) {
-        //
-      }
-    }
-    return null;
+    return true;
   },
-  findFireBan: (slot, model) => {
-    if (slot.area) {
-      const foundLoation = model.data
-        .find(t => t.status)
-        .declareList.find(
-          f => f.name.toLowerCase() === slot.area.toLowerCase(),
-        );
-      return foundLoation;
-    }
-    const postalCode = slot.postcode ? slot.postcode : model.postcode;
-    console.log(postalCode);
-    if (postalCode) {
-      try {
-        const postcode = location(postalCode);
-        console.log(postcode);
-        const foundLoation = model.data
-          .find(t => t.status)
-          .declareList.find(f => f.name === postcode);
-        console.log(foundLoation);
-        return foundLoation;
-      } catch (err) {
-        console.log(err);
-      }
-    }
-    return null;
+  platformName: voxaEvent => _.get(voxaEvent, 'platform.name', 'alexa'),
+  getFireData: () => fireData(),
+  endIntents: voxaEvent => ['StopIntent', 'NoIntent', 'CancelIntent'].includes(voxaEvent.intent.name),
+  findFireRating: voxaEvent => getDataForArea(voxaEvent, 'firerating'),
+  getDataForArea: (voxaEvent) => {
+    const data = _.get(voxaEvent, 'model.data');
+    const area = getArea(voxaEvent);
+    const date = _.get(voxaEvent, 'intent.params.date');
+    return getDataForArea(data, area, date);
   },
 };

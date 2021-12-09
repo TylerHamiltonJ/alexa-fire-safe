@@ -1,7 +1,7 @@
 {
-	"name": "nib-health",
+	"name": "fire-safe",
 	"version": "0.1.0",
-	"description": "Voice Experience for NIB ",
+	"description": "Voice Experience for Fire Safe",
 	"main": "gulpfile.js",
 	"scripts": {
 		"test": "mocha --recursive test/**/*.spec.js",
@@ -31,6 +31,7 @@
 		"fuzzyset.js": "^0.0.7",
 		"http": "^0.0.0",
 		"lambda-log": "^2.0.0",
+		"latlng-to-zip": "^0.0.1",
 		"lodash": "^4.17.11",
 		"moment-timezone": "^0.5.21",
 		"morgan": "^1.9.1",
@@ -54,7 +55,7 @@
 		"serverless": "^1.32.0",
 		"serverless-sentry": "^1.2.0",
 		"serverless-sentry-lib": "^1.1.2",
-		"voxa-cli": "1.0.2-alpha21"
+		"voxa-cli": "1.0.2-alpha25"
 	},
 	"directories": {
 		"test": "test"
